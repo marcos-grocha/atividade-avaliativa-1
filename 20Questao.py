@@ -4,8 +4,8 @@
 # • Comandos utilizados: input(), if, else, print().
 
 senha = ""
-
 def cadastrar_senha():
+    global senha
     senha_escolhida = input("Cadastre uma senha: ")
     senha_confirmada = input("Confirme sua senha: ")
     while senha_escolhida != senha_confirmada:
@@ -19,13 +19,11 @@ def login():
     if senha != "":
         possivel_senha = input("Digite sua senha: ")
         if senha == possivel_senha:
-            print("Você fez login com sucesso!")
+            print("\n === SUCESSO ao fazer login! ===\n")
         else:
-            print("Senha inválida")
-            menu()
-    elif senha == "":
-        print("Nenhuma senha cadastrada!")
-        menu()
+            print("\n --- Senha inválida. ---\n")
+    else:
+        print("\n (!) Nenhuma senha cadastrada! Cadastre uma senha primeiro. (!)")
        
 def menu():
     print("""
@@ -41,16 +39,18 @@ def menu():
     opcao = int(input("Escolha uma opção: "))
     return opcao
 
-opcao = menu()
-if opcao == 1:
-    print("Vamos cadastrar uma senha...")
-    cadastrar_senha()
-    login()
-elif opcao == 2:
-    print("Vamos fazer login...")
-    login()
-elif opcao == 3:
-    print("Saindo...")
-else:
-    print("Opção inválida.")
-    login()
+while True:
+    opcao = menu()
+    if opcao == 1:
+        print("Vamos cadastrar uma senha...")
+        cadastrar_senha()
+        login()
+    elif opcao == 2:
+        print("Vamos fazer login...")
+        login()
+    elif opcao == 3:
+        print("\n=== Obrigado por usar nosso aplicativo! ===")
+        print("__________________________________Saindo...")
+        break
+    else:
+        print("Opção inválida.")
