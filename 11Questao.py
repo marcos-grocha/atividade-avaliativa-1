@@ -3,53 +3,29 @@
 # idade e nota. Armazene essas informações em um dicionário e exiba os dados cadastrados.
 # • Comandos utilizados: input(), print(), dicionários, for.
 
-def menu ():
-    print("""
-    ----------------------------
-    |                          |
-    |      Tela de Login       |
-    |                          |
-    |  1. Cadastrar Senha      |
-    |  2. Fazer Login          |
-    |                          |
-    ----------------------------
-    \n""")
+# Inicializando um dicionário vazio para armazenar os alunos
+cadastro_alunos = {}
 
 
-menu()
+# Definir quantos alunos serão cadastrados
+numero_alunos = int(input("Quantos alunos deseja cadastrar? "))
 
 
-opcao = int(input("Escolha uma opção: "))
-senha = ""
+# Loop para cadastrar os alunos
+for i in range(numero_alunos):
+    print(f"\nCadastro do aluno {i+1}:")
+    nome = input("Nome: ")
+    idade = int(input("Idade: "))
+    nota = float(input("Nota: "))
+   
+    # Armazenar as informações do aluno no dicionário
+    cadastro_alunos[nome] = {
+        "Idade": idade,
+        "Nota": nota
+    }
 
 
-def cadastrar_senha (senha):
-     # Cadastrar uma senha
-    if opcao == 1:
-        senha_cadastrada = input("Cadastre uma senha: ")
-        confirmacao_senha = input("Confirme sua senha: ")
-
-
-        while senha_cadastrada != confirmacao_senha:
-            print("As senhas estão diferentes, tente novamente!")
-            senha_cadastrada = input("Cadastre uma senha: ")
-            confirmacao_senha = input("Confirme sua senha: ")
-
-
-        senha = senha_cadastrada
-
-
-        print("Senha cadastrada com sucesso!")
-
-
-    # Solicitar que o usuário faça login
-    if opcao == 2:
-        if senha != "":
-            senha_login = input("Digite sua senha: ")
-            if senha_login == senha:
-                    print("Você logou com sucesso!")
-            while senha_login != senha:
-                senha_login = input("Digite sua senha: ")
-        else:
-            print("Nenhuma senha cadastrada!")
-           
+# Exibir os dados cadastrados
+print("\nDados cadastrados:")
+for nome, dados in cadastro_alunos.items():
+    print(f"Nome: {nome}, Idade: {dados['Idade']}, Nota: {dados['Nota']}")
