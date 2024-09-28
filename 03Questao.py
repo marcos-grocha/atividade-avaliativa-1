@@ -4,10 +4,15 @@
 # • Comandos utilizados: input(), if, else, print().
 
 # Solicitar a idade do usuário
-idade = int(input("Digite sua idade: "))
+print("----------------------------------------------------------------------")
+print("| Olá! Nosso programa te ajuda a descobrir se você é maior de idade...")
+idade = int(input("| Digite sua idade: "))
 
 # Verificar se o usuário é maior ou menor de idade
 if idade >= 18:
-    print("Você é maior de idade.")
+    print(f"| Você tem {idade} anos, portanto é MAIOR de idade.")
+    print("----------------------------------------------")
 else:
-    print("Você é menor de idade.")
+    print(f"| Você tem {idade} anos, portanto é MENOR de idade.")
+    print("----------------------------------------------")
+print("=== Obrigado por usar nosso aplicativo! ===\n")

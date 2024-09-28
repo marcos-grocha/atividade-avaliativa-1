@@ -8,8 +8,9 @@ cadastro_alunos = {}
 
 
 # Definir quantos alunos serão cadastrados
-numero_alunos = int(input("Quantos alunos deseja cadastrar? "))
-
+print("\n================================")
+numero_alunos = int(input("Quantos alunos deseja cadastrar: "))
+print("================================")
 
 # Loop para cadastrar os alunos
 for i in range(numero_alunos):
@@ -24,8 +25,8 @@ for i in range(numero_alunos):
         "Nota": nota
     }
 
-
 # Exibir os dados cadastrados
-print("\nDados cadastrados:")
+print("\nAlunos cadastrados:")
 for nome, dados in cadastro_alunos.items():
     print(f"Nome: {nome}, Idade: {dados['Idade']}, Nota: {dados['Nota']}")
+print("=== Obrigado por usar nosso aplicativo! ===\n")

@@ -5,18 +5,15 @@
 
 senha = ""
 
-def verificar_senha(senha_cadastrada, confirmacao_senha):
-    while senha_cadastrada != confirmacao_senha:
-        print("As senhas estão diferentes, digite novamente")
-        senha_cadastrada = input("Digite sua senha: ")
-        confirmacao_senha = input("Confirme sua senha: ")
-    return senha_cadastrada
-
-
 def cadastrar_senha():
-   
-    return senha
-
+    senha_escolhida = input("Cadastre uma senha: ")
+    senha_confirmada = input("Confirme sua senha: ")
+    while senha_escolhida != senha_confirmada:
+        print("As senhas estão diferentes, digite novamente")
+        senha_escolhida = input("Digite sua senha: ")
+        senha_confirmada = input("Confirme sua senha: ")
+    senha = senha_escolhida
+    print("Senha cadastrada com sucesso.")
 
 def login():
     if senha != "":
@@ -26,7 +23,7 @@ def login():
         else:
             print("Senha inválida")
             menu()
-    else:
+    elif senha == "":
         print("Nenhuma senha cadastrada!")
         menu()
        
@@ -43,17 +40,17 @@ def menu():
     """)
     opcao = int(input("Escolha uma opção: "))
     return opcao
-   
+
 opcao = menu()
 if opcao == 1:
-    senha_nova = verificar_senha(input("Cadastre uma senha: "), input("Confirme sua senha: "))
-    print("Senha cadastrada com sucesso")
-    senha = senha_nova
+    print("Vamos cadastrar uma senha...")
+    cadastrar_senha()
+    login()
 elif opcao == 2:
+    print("Vamos fazer login...")
     login()
 elif opcao == 3:
     print("Saindo...")
-    exit()
 else:
     print("Opção inválida.")
     login()
