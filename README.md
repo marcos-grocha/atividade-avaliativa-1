@@ -7,9 +7,9 @@ Este repositório contém três programas desenvolvidos em Python, que abordam d
 - [Questão 03: Verificar Maioridade](#questão-03-verificar-maioridade)
 - [Questão 11: Cadastro de Alunos](#questão-11-cadastro-de-alunos)
 - [Questão 20: Sistema de Login e Senha](#questão-20-sistema-de-login-e-senha)
-- [Requisitos](#requisitos)
+- [Requisitos](####requisitos)
 - [Como rodar o código](#como-rodar-o-código)
-- [Autor](#autor)
+- [Autor]([#autor](https://github.com/marcos-grocha/))
 
 ---
 
@@ -63,9 +63,7 @@ As informações são armazenadas em um dicionário e, ao final, o sistema exibe
    python cadastro_alunos.py
 
 ### Exemplo de uso
-================================
 Quantos alunos deseja cadastrar: 2
-================================
 
 Cadastro do aluno 1:
 Nome: João
@@ -106,19 +104,13 @@ O sistema inclui um menu que oferece as opções de cadastrar senha, fazer login
    python verificacao_senha.py
 
 ### Exemplo de uso
-|----------------------|
-|  =  Menu Inicial  =  |
-|                      |
-| [1] Cadastrar Senha  |
-| [2] Fazer Login      |
-| [3] Sair             |
-|----------------------|
-
-Escolha uma opção: 1
 Vamos cadastrar uma senha...
+
 Cadastre uma senha: 1234
 Confirme sua senha: 1234
+
 Senha cadastrada com sucesso.
+
 Digite sua senha: 1234
 
  === SUCESSO ao fazer login! ===
@@ -127,3 +119,4 @@ Digite sua senha: 1234
 
 #### Requisitos: Python 3.x
 #### Este projeto não possui uma licença específica. Sinta-se à vontade para usar e modificar como desejar.
+#### Autor: marcos-grocha
