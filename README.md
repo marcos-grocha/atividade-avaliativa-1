@@ -9,7 +9,7 @@ Este repositório contém três programas desenvolvidos em Python, que abordam d
 - [Questão 20: Sistema de Login e Senha](#questão-20-sistema-de-login-e-senha)
 - [Requisitos](####requisitos)
 - [Como rodar o código](#como-rodar-o-código)
-- [Autor]([#autor](https://github.com/marcos-grocha/))
+- [Autor](####autor)
 
 ---
 
@@ -66,18 +66,19 @@ As informações são armazenadas em um dicionário e, ao final, o sistema exibe
 Quantos alunos deseja cadastrar: 2
 
 Cadastro do aluno 1:
-Nome: João
-Idade: 20
-Nota: 8.5
+   Nome: João
+   Idade: 20
+   Nota: 8.5
 
 Cadastro do aluno 2:
-Nome: Maria
-Idade: 19
-Nota: 9.2
+   Nome: Maria
+   Idade: 19
+   Nota: 9.2
 
 Alunos cadastrados:
-Nome: João, Idade: 20, Nota: 8.5
-Nome: Maria, Idade: 19, Nota: 9.2
+   Nome: João, Idade: 20, Nota: 8.5
+   Nome: Maria, Idade: 19, Nota: 9.2
+   
 === Obrigado por usar nosso aplicativo! ===
 
 ---
@@ -106,10 +107,10 @@ O sistema inclui um menu que oferece as opções de cadastrar senha, fazer login
 ### Exemplo de uso
 Vamos cadastrar uma senha...
 
-Cadastre uma senha: 1234
-Confirme sua senha: 1234
-
-Senha cadastrada com sucesso.
+   Cadastre uma senha: 1234
+   Confirme sua senha: 1234
+   
+   Senha cadastrada com sucesso.
 
 Digite sua senha: 1234
 
