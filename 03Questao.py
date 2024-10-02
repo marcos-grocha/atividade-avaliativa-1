@@ -1,7 +1,3 @@
-# 3. Verificação de Idade para Acesso
-# • Descrição: Desenvolva um programa que peça a idade do usuário e informe se ele é maior
-# ou menor de idade.
-# • Comandos utilizados: input(), if, else, print().
 
 # Solicitar a idade do usuário
 print("----------------------------------------------------------------------")
@@ -16,3 +12,24 @@ else:
     print(f"| Você tem {idade} anos, portanto é MENOR de idade.")
     print("----------------------------------------------")
 print("=== Obrigado por usar nosso aplicativo! ===\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 3. Verificação de Idade para Acesso
+# • Descrição: Desenvolva um programa que peça a idade do usuário e informe se ele é maior
+# ou menor de idade.
+# • Comandos utilizados: input(), if, else, print().
