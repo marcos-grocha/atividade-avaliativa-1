@@ -27,16 +27,10 @@ def login():
        
 # Metódo que monta o menu e aguarda resposta do usuário
 def menu():
-    print("""
-    |----------------------|
-    |  =  Menu Inicial  =  |
-    |                      |
-    | [1] Cadastrar Senha  |
-    | [2] Fazer Login      |
-    | [3] Sair             |
-    |                      |
-    |----------------------|\n
-    """)
+    print("""   |  =  Menu Inicial  =  |
+                | [1] Cadastrar Senha  |
+                | [2] Fazer Login      |
+                | [3] Sair             |\n """)
     opcao = int(input("Escolha uma opção: "))
     return opcao
 
@@ -44,24 +38,11 @@ def menu():
 while True:
     opcao = menu()
     if opcao == 1:
-        print("Vamos cadastrar uma senha...")
         cadastrar_senha()
-        login()
     elif opcao == 2:
-        print("Vamos fazer login...")
         login()
     elif opcao == 3:
-        print("\n=== Obrigado por usar nosso aplicativo! ===")
-        print("__________________________________Saindo...")
+        print("Saindo...")
         break
     else:
         print("Opção inválida.")
-
-
-
-
-
-# 20. Verificação de Senha
-# • Descrição: Crie um sistema de verificação de senha onde o usuário insere a senha e, se ela
-# estiver correta, o acesso é concedido. Caso contrário, exiba uma mensagem de erro.
-# • Comandos utilizados: input(), if, else, print().
